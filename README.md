@@ -63,3 +63,5 @@ dependencies {
     androidTestImplementation 'androidx.ui:ui-test:1.0.0-alpha05'
 }
 
+## Tạo project compose
+Vào File > New > New Project và chọn Empty Compose Activity
