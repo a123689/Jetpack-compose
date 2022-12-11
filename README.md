@@ -88,3 +88,22 @@ setContent sẽ đóng vai trò như setContentView như trrong android gốc. C
  }
 
 ![image3](https://images.viblo.asia/298bec56-4a85-46b7-aecd-e4da33e88d95.png)
+
+# Khai báo hàm 
+Thì nó cũng giống với việc khai báo như Android gốc nhưng nếu có chứa các phần tử UI thì phải khai báo thêm @Composable trước tên hàm.
+
+Hàm bình thường.
+
+fun Greetings(name: String) {
+
+    return
+}
+
+Hàm có chứa UI.
+
+@Composable
+fun Greeting(name: String) {
+
+    Text(text = "Hello $name!")
+}
+
