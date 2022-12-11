@@ -220,7 +220,6 @@ suspend fun getForecast(): String {
 
     delay(1000)
     return "Sunny"
-  
 }
 
 suspend fun getTemperature(): String {
@@ -228,7 +227,6 @@ suspend fun getTemperature(): String {
     delay(500)
     throw IllegalArgumentException("Temperature is invalid")
     return "30\u00b0C"
-  
 }
 
 
