@@ -66,4 +66,4 @@ dependencies {
 ## Tạo project compose
 Vào File > New > New Project và chọn Empty Compose Activity
 
-https://images.viblo.asia/f8e79705-e6bc-4e03-8732-d024fd45e2f4.png
+(https://images.viblo.asia/f8e79705-e6bc-4e03-8732-d024fd45e2f4.png)
