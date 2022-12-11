@@ -195,6 +195,7 @@ https://github.com/android/compose-samples
 # Tuân thủ các nguyên tắc API cho jetpack compose
 
 # Sử dụng Coroutines với jetpack compose thông qua ví dụ của Sagar Begale về RaceTracker App
+
 fun main(){
     
     runBlocking {
@@ -206,7 +207,7 @@ fun main(){
 
 suspend fun getForecast(): String {
 
-  delay(1000)
+  delay(1000)\n
   return "Sunny"
   
 }
