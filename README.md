@@ -191,3 +191,23 @@ Hình dạng không thể nhìn thấy, nhưng đồ họa được cắt để 
 
 # Trang mẫu chính thức của jetpack compose trên GitHub
 https://github.com/android/compose-samples
+
+# Tuân thủ các nguyên tắc API cho jetpack compose
+
+# Sử dụng Coroutines với jetpack compose thông qua ví dụ của Sagar Begale về RaceTracker App
+fun main(){
+    
+    runBlocking {
+      println("Weather forecast")
+      println(getWeatherReport())
+      println("Have a good day!")
+    }
+}
+
+suspend fun getForecast(): String {
+
+  delay(1000)
+  return "Sunny"
+  
+}
+
