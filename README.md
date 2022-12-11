@@ -207,7 +207,7 @@ fun main(){
 
 suspend fun getForecast(): String {
 
-  delay(1000)\n
+  delay(1000) \n
   return "Sunny"
   
 }
