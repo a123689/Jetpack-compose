@@ -146,9 +146,11 @@ Phần tử Column sẽ chứa các phần tử con và sẽ hiển thị theo d
         Text("Davenport, California")
         Text("December 2018")
     }
+    
 ![image5](https://images.viblo.asia/0909aafe-d240-4ed7-9d37-1ec8d9067a0d.png)
 
-#Image
+# Image
+
 @Composable
 fun NewsStory() {
 
