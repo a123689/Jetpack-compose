@@ -11,6 +11,7 @@ Cấu hình trong file build.gradle:
 Bạn cần đặt cấp API tối thiểu của ứng dụng thành 21 trở lên và bật Jetpack Compose trong tệp build.gradle
 
 android {
+
     defaultConfig {
         ...
         minSdkVersion 21
