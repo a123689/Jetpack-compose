@@ -71,3 +71,20 @@ Vào File > New > New Project và chọn Empty Compose Activity
 Trong MainActivity.kt sẽ hiển thị như sau:
 
 ![image2](https://images.viblo.asia/c9b06ffd-56f7-4162-a7b0-b17112348a0b.png)
+
+## Các thành phần của jetpack compose
+
+### @Composable
+
+Jetpack compose được xây dựng xung quanh hàm composable. Đó là những function sẽ là nơi ta xác định UI và data của nó cũng tức là nơi ta thực hiện việc thêm các TextView hoặc các Button...
+
+Thêm một phần tử Text.
+setContent sẽ đóng vai trò như setContentView như trrong android gốc. Chỉ cần thêm một class Text và khai báo trong constructor của nó là xong 
+
+ setContent {
+ 
+    Text("Hello")
+    
+ }
+
+![image3](https://images.viblo.asia/298bec56-4a85-46b7-aecd-e4da33e88d95.png)
