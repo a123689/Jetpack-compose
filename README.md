@@ -67,3 +67,7 @@ dependencies {
 Vào File > New > New Project và chọn Empty Compose Activity
 
 ![hihi](https://images.viblo.asia/f8e79705-e6bc-4e03-8732-d024fd45e2f4.png)
+
+Trong MainActivity.kt sẽ hiển thị như sau:
+
+![image2](https://images.viblo.asia/c9b06ffd-56f7-4162-a7b0-b17112348a0b.png)
