@@ -142,6 +142,7 @@ Phần tử Column sẽ chứa các phần tử con và sẽ hiển thị theo d
    Column(
         modifier = androidx.compose.ui.Modifier.padding(16.dp)
     ) {
+    
         Text("A day in Shark Fin Cove")
         Text("Davenport, California")
         Text("December 2018")
@@ -181,4 +182,11 @@ contentScale = ContentScale.Crop: Chỉ định rằng đồ họa sẽ lấp đ
 
 ## Material Design
 ## Dùng thuộc tính Shape
+
+Một trong những trụ cột của Material Design System là Shape. Sử dụng hàm clip() để làm tròn các góc của hình ảnh.
+
+Hình dạng không thể nhìn thấy, nhưng đồ họa được cắt để phù hợp với Shape, vì vậy nó hiện có các góc tròn.
+
+![image7](https://images.viblo.asia/a7d11eb0-f748-41d8-a15a-7d19715f0034.png)
+
 
