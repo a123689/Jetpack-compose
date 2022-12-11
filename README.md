@@ -40,3 +40,26 @@ android {
         kotlinCompilerExtensionVersion '1.0.0-alpha05'
     }
 }
+
+và thêm Jetpack Compose phụ thuộc vào bộ công cụ trong build.gradle :
+
+dependencies {
+
+    implementation 'androidx.compose.ui:ui:1.0.0-alpha05'
+    // Tooling support (Previews, etc.)
+    implementation 'androidx.ui:ui-tooling:1.0.0-alpha05'
+    // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
+    implementation 'androidx.compose.foundation:foundation:1.0.0-alpha05'
+    // Material Design
+    implementation 'androidx.compose.material:material:1.0.0-alpha05'
+    // Material design icons
+    implementation 'androidx.compose.material:material-icons-core:1.0.0-alpha05'
+    implementation 'androidx.compose.material:material-icons-extended:1.0.0-alpha05'
+    // Integration with observables
+    implementation 'androidx.compose.runtime:runtime-livedata:1.0.0-alpha05'
+    implementation 'androidx.compose.runtime:runtime-rxjava2:1.0.0-alpha05'
+
+    // UI Tests
+    androidTestImplementation 'androidx.ui:ui-test:1.0.0-alpha05'
+}
+
