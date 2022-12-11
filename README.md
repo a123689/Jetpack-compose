@@ -107,3 +107,76 @@ fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
+# @Preview
+Cho phép bạn xem trước các chức năng có thể tổng hợp của mình trong IDE, thay vì cần tải ứng dụng xuống thiết bị hoặc trình giả lập Android.
+
+![image4](https://images.viblo.asia/c9b06ffd-56f7-4162-a7b0-b17112348a0b.png)
+
+# Layout
+
+Các phần tử UI được phân cấp, với các phần tử được chứa trong các phần tử khác. Trong Compose, bạn xây dựng hệ thống phân cấp giao diện người dùng bằng cách gọi các hàm có thể tổng hợp từ các hàm có thể tổng hợp khác.
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Text(text = "Hello")
+            NewsStory()
+        }
+    }
+}
+
+@Composable
+fun NewsStory() {
+
+    Text("A day in Shark Fin Cove")
+    Text("Davenport, California")
+    Text("December 2018")
+}
+
+# Sử dụng Column
+
+Phần tử Column sẽ chứa các phần tử con và sẽ hiển thị theo dạng cột và theo thứ tự được add vào.
+
+   Column(
+        modifier = androidx.compose.ui.Modifier.padding(16.dp)
+    ) {
+        Text("A day in Shark Fin Cove")
+        Text("Davenport, California")
+        Text("December 2018")
+    }
+![image5](https://images.viblo.asia/0909aafe-d240-4ed7-9d37-1ec8d9067a0d.png)
+
+#Image
+@Composable
+fun NewsStory() {
+
+    val image = imageResource(R.drawable.header)
+    Column(
+        modifier = androidx.compose.ui.Modifier.padding(16.dp)
+    ) {
+        val imageModifier = androidx.compose.ui.Modifier
+            .preferredHeight(180.dp)
+            .fillMaxWidth()
+
+        Image(image, modifier = imageModifier,
+            contentScale = ContentScale.Crop)
+
+        Text("A day in Shark Fin Cove")
+        Text("Davenport, California")
+        Text("December 2018")
+    }
+}
+
+favouriteHeight (180.dp): Chỉ định chiều cao của hình ảnh.
+
+fillMaxWidth (): Chỉ định rằng hình ảnh phải đủ rộng để lấp đầy bố cục của nó.
+
+contentScale = ContentScale.Crop: Chỉ định rằng đồ họa sẽ lấp đầy chiều rộng của cột và được cắt nếu cần đến chiều cao thích hợp
+
+![imag6](https://images.viblo.asia/8dd1cc6b-dd7d-49fa-87d7-a283f6164142.png)
+
+## Material Design
+## Dùng thuộc tính Shape
+
