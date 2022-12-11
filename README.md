@@ -205,10 +205,30 @@ fun main(){
     }
 }
 
+suspend fun getWeatherReport() = coroutineScope {
+
+    val forecast = async { getForecast() }
+    val temperature = async { getTemperature() }
+    try {
+       "${temperature.await()}"
+    }catch(e: IllegalArgumentException){
+       println("Caught exception in getWeatherReport() $e")
+     }
+}
+
 suspend fun getForecast(): String {
 
     delay(1000)
     return "Sunny"
   
 }
+
+suspend fun getTemperature(): String {
+
+    delay(500)
+    throw IllegalArgumentException("Temperature is invalid")
+    return "30\u00b0C"
+  
+}
+
 
